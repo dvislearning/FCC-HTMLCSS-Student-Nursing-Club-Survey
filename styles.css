@@ -178,3 +178,35 @@ body {
 	color: #2e343b;
 	background-color: #f64747;	
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 520px) {
+	#title {
+		font-size: 1.40em;
+	}	
+	
+	#form-container {
+		width: 100%;
+		margin-top: 60px;
+		padding-top: 50px;
+	}
+	
+	.form-item {
+		justify-content: space-between;
+	}
+	
+	#survey-form {
+		text-align: left;
+	}
+	
+	.group-choice-container {
+		border: none
+	}	
+
+	#submit {
+		display: block;
+		width: 80%;
+    margin: 8% 0 0 12%;
+	}
+}
