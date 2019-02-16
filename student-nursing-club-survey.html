@@ -53,13 +53,90 @@
 					</label>
 				</div>	
 					<select id="dropdown" placeholder="Please Select One" name="involvement" class="input-field" required>
-					<option value="nursing-program">I am in the Nursing program</option>
-					<option value="pre-nursing">I am Pre-Nursing</option>
-					<option value="not-major">I am not a Nursing major</option>
-					<option value="not-student">I am not a student at LAVC</option>
+						<option value="nursing-program">I am in the Nursing program</option>
+						<option value="pre-nursing">I am Pre-Nursing</option>
+						<option value="not-major">I am not a Nursing major</option>
+						<option value="not-student">I am not a student at LAVC</option>
 					</select>
-			</div>			
+			</div>
+
+			<div class="form-item">
+				<div class="category-label">
+					<label for="joining-question">
+						Are you going to join Nursing Club again next semester?:
+					</label>
+				</div>
+				<div class="group-choice-container">
+					<div class="radio-button">
+						<label for="joining-yes">
+						  <input id="joining-yes" type="radio" name="joining-question" value="yes">Yes
+						</label>
+					</div>
+					<div class="radio-button">
+						<label for="joining-no" class="radio-button">
+						  <input id="joining-no" type="radio" name="joining-question" value="no">No
+						</label>
+					</div>
+					<div class="radio-button">
+						<label for="joining-not-sure" class="radio-button">
+						  <input id="joining-not-sure" type="radio" name="joining-question" value="maybe">I'm not sure
+						</label>
+					</div>
+				</div>										
+			</div>
+
+			<div class="form-item">
+				<div class="category-label">
+					<label for="speaker-question">
+						What kind of speakers would you like to see more of next year? (Select all the apply):
+					</label>
+				</div>
+				<div class="group-choice-container" id="checkbox-items">	
+					<div> 
+						<label for="nurse-choice"><input id="nurse-choice" type="checkbox" name="speaker-question" value="nurse-choice">Professional Nurses (RNs, LVNs, etc)</label>
+					</div>
+
+					<div>
+						<label for="np-choice"><input id="np-choice" type="checkbox" name="speaker-question" value="np-choice">Nurse Practioners</label>
+					</div>
+
+
+					<div>
+						<label for="pa-choice"><input id="pa-choice" type="checkbox" name="speaker-question" value="pa-choice">Physician's Assistants</label>
+					</div>
+
+					<div>
+						<label for="support-choice"><input id="support-choice" type="checkbox" name="speaker-question" value="support-choice">Nursing Assistants (MAs, CNAs, etc.)</label>
+					</div>
+
+
+					<div>
+						<label for="md-choice"><input id="support-choice" type="checkbox" name="speaker-question" value="md-choice">Medical Doctors</label>
+					</div>
+
+					<div>
+						<label for="admin-choice"><input id="admin-choice" type="checkbox" name="speaker-question" value="admin-choice">Hospital and Medical Administrators</label>
+					</div>
+
+					<div>
+						<label for="student-choice"><input id="student-choice" type="checkbox" name="speaker-question" value="student-choice">Students in the Nursing Program</label>
+					</div>
+				</div>
+			</div>
+
+ 			<div class="form-item">
+				<div class="category-label">
+					<label for="comments" id="comments-label">
+						Additional Comments:
+					</label>
+				</div>	
+					<textarea id="comments" name="comment" placeholder="Your feedback would be very helpful to us!" rows="5"></textarea>
+			</div>
+
+			<button type="submit" id="submit">Submit</button>		
+
 		</form>
 	</div>
 </body>
 </html>
+
