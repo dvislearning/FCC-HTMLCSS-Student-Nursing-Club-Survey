@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">	
+	<title>LAVC Nursing Club Feedback Survey</title>
+</head>
+<body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<header id="page-top">
+		<img src="lavc-logo.jpg" alt="Los Angeles Valley College Logo">
+		<div id="title-container">
+			<h1 id="title">Los Angeles Valley College<br>Nursing Club</h1>
+		</div>
+	</header>
+	<div id="form-container">
+		<h2> Feedback Survey</h2>
+		<p id="description">Thank you for being a member of LAVC's Nursing Club!  Please fill out this survey so we can better address your needs next semester.</p>
+		<form id="survey-form">
+			
+			<div class="form-item">
+				<div class="category-label">
+					<label for="name" id="name-label">
+						* Name:
+					</label>
+				</div>	
+					<input type="text" id="name" placeholder="Name" name="name" class="input-field" required>
+			</div>
+			
+			<div class="form-item">
+				<div class="category-label">
+					<label for="email" id="email-label">
+						* E-mail:
+					</label>
+				</div>	
+					<input type="email" id="email" placeholder="E-mail" name="email" class="input-field" required>
+			</div>
+
+
+			<div class="form-item">
+				<div class="category-label">
+					<label for="number" id="number-label">
+						* Units Enrolled:
+					</label>
+				</div>	
+					<input type="number" id="number" placeholder="Number of Units Currently Enrolled in" name="number" class="input-field" min=1 max=30 required>
+			</div>
+
+			<div class="form-item">
+				<div class="category-label">
+					<label for="status" id="status-label">
+						* What best describes your involvement in LAVC's Nursing Program:
+					</label>
+				</div>	
+					<select id="dropdown" placeholder="Please Select One" name="involvement" class="input-field" required>
+					<option value="nursing-program">I am in the Nursing program</option>
+					<option value="pre-nursing">I am Pre-Nursing</option>
+					<option value="not-major">I am not a Nursing major</option>
+					<option value="not-student">I am not a student at LAVC</option>
+					</select>
+			</div>			
+		</form>
+	</div>
+</body>
+</html>
